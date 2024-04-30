@@ -47,6 +47,18 @@ p {
 .section-m1 {
   margin: 40px 0;
 }
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding:15% 30%;
+  color: black;
+  background-color: wheat;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2;
+}
 
 body {
   width: 100%;
@@ -170,6 +182,13 @@ background-color: #cdebbc;
 
 
 /* Feature Product */
+#product1 .pro-container{
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+flex-wrap: wrap;
+}
+
 #product1{
   text-align: center;
 }
@@ -184,6 +203,9 @@ background-color: #cdebbc;
   margin: 15px 0;
   transition: 0.2 ease;
 }
+#product1 .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0,0,0.06);
+}
 #product1 .pro img{
   width: 100%;
   border-radius: 20px;
@@ -191,27 +213,80 @@ background-color: #cdebbc;
 #product1 .pro{
   text-align: start;
   padding: 10px 0;
+  position: relative;
 }
-#product1 .pro.des{
+#product1 .pro .des{
   text-align: start;
   padding: 10px 0;
 }
-#product1 .pro span{
+#product1 .pro .des span{
   color: #606063;
   font-size: 12px;
 }
-#product1 .pro.pro.des h5{
+#product1 .pro .des h5{
   padding-top: 7px;
   color: black;
   font-size: 14px;
 }
-#product1 .pro.des i{
+#product1 .pro .des i{
   font-size: 12px;
   color: rgb(243,181,25);
 }
-#product1 .pro.des h4{
+#product1 .pro .des h4{
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
-  color:wheat;
+  color:black;
 }
+#product1 .pro .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  border: 1px solid wheat;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/* Repair service */
+#banner{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-image: url(images/img/banner/b2.jpg);
+width: 100%;
+height: 40vh;
+background-size: cover;
+background-position: center;
+}
+#banner h4{
+  color: wheat;
+  font-size: 16px;
+}
+#banner h2{
+  color: #bcebda;
+  font-size: 30px;
+  padding: 10px 0;
+}
+#banner h2 span{
+  color:red;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#banner button:hover{
+  background-color: green;
+  color: wheat;
+
+}
+#banner button{
+  height: 50px;
+  width: 100px;
+}
+
