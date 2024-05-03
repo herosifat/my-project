@@ -50,12 +50,24 @@ p {
 button.normal{
   font-size: 14px;
   font-weight: 600;
-  padding:15% 30%;
+  padding:10% 20%;
   color: black;
   background-color: wheat;
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  outline: none;
+  transition: 0.2;
+}
+button.white{
+  font-size: 13px;
+  font-weight: 600;
+  padding:5% 10%;
+  color: white;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid white;
   outline: none;
   transition: 0.2;
 }
@@ -290,3 +302,199 @@ background-position: center;
   width: 100px;
 }
 
+/* sm-banner */
+#sm-banner .banner-box{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+background-image: url(images/img/banner/b17.jpg);
+min-width: 580px;
+height: 50vh;
+background-size: cover;
+background-position: center;
+padding: 30px;
+}
+#sm-banner .banner-box2{
+  background-image: url(images/img/banner/b10.jpg);
+}
+
+#sm-banner{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#sm-banner h4{
+  color:white;
+  font-size: 20px;
+  font-weight: 300;
+}
+#sm-banner h2{
+  color:white;
+  font-size: 28px;
+  font-weight: 800;
+}
+#sm-banner span{
+  color:white;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button{
+background-color: green;
+border: 1px solid green;
+}
+#banner3 .banner-box{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+background-image: url(images/img/banner/b7.jpg);
+min-width: 30%;
+height: 30vh;
+background-size: cover;
+background-position: center;
+padding: 20px;
+margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+  background-image: url(images/img/banner/b4.jpg);
+}
+#banner3 .banner-box3{
+  background-image: url(images/img/banner/b18.jpg);
+
+}
+#banner3{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+#banner3 h2{
+  color: white;
+  font-weight: 900;
+  font-size: 22px;
+}
+#banner3 h3{
+  color: #ec544e;
+  font-weight: 800;
+  font-size: 15px;
+}
+#newsletter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(images/img/banner/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+#newsletter h4{
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+#newsletter p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+#newsletter span{
+  color: yellow;
+}
+#newsletter input{
+height: 3.125rem;
+padding: 0 1.25em;
+font-size: 14px;
+width: 100%;
+border: 1px solid transparent;
+border-radius: 4px;
+outline: none;
+}
+#newsletter button{
+  background-color: green;
+  color: #fff;
+  white-space: nowrap;
+  height: 3.125rem;
+padding: 0 1em;
+font-size: 14px;
+width: 40%;
+border: 1px solid transparent;
+border-radius: 4px;
+outline: none;
+}
+#newsletter .form{
+  display: flex;
+  width: 40%;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col{
+  display: flex;
+ flex-direction: column;
+ text-align: flex-start;
+ margin-bottom: 20px;
+}
+footer .logo{
+  margin-bottom: 30px;
+}
+footer h4{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p{
+  font-size: 13px;
+ margin: 0 0 8px 0;
+}
+footer a{
+  font-size:13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer .follow{
+  margin: 20px;
+}
+footer .follow i{
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+footer .install .row img{
+  border: 1px solid green;
+  border-radius: 6px;
+}
+footer .install img{
+  margin:10px 0 15px 0 ;
+}
+footer .follow i:hover,
+footer a:hover{
+  color: green;
+}
+footer .copyright{
+  width: 100%;
+  text-align: center;
+}
+
+/* responsive */
+@media (max-width:799px){
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top:0;
+    right: 0px;
+    height: 80 vh;
+    width: 200px;
+    box-shadow: 0 40px 60px rgba(0, 0,0,0.01);
+    padding: 0px 0 0 10px;
+  }
+}
